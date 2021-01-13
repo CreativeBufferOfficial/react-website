@@ -1,0 +1,235 @@
+/*------------------------------------*\
+    30. LOGIN FORM
+\*------------------------------------*/
+.login--form .modal-dialog {
+  width: 100%;
+  max-width: 650px;
+  margin-top: 80px;
+}
+
+.login--form .modal-content {
+  padding: 20px 40px;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.login--form .close {
+  float: none;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  min-width: 30px;
+  color: #393939;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 1px #ff5252;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  outline: 0;
+  z-index: 1;
+}
+
+.login--form .modal-body {
+  padding: 0;
+}
+
+.login--form .modal-body > .row > div {
+  padding: 40px 30px;
+}
+
+.login--form .title {
+  margin-bottom: 21px;
+}
+
+.login--form .title .h4 {
+  margin-top: -3px;
+  color: #2683ff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.login--form .bg--overlay .title .h4 {
+  color: #fff;
+}
+
+.login--form .form-control {
+  background-color: #f8f8f8;
+}
+
+.login--form .form-control:not(:focus) {
+  border-color: #e9f2ff;
+}
+
+.login--form .help-block {
+  margin: 15px 0 31px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.login--form .btn {
+  margin-top: 10px;
+}
+
+.login--form .btn-primary:not(:hover):not(:focus) {
+  background-color: #393939;
+  border-color: #393939;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 900;
+  background-color: #000;
+}
+
+.modal-header {
+  padding: 0px 0px 15px 0px !important;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.text-blue {
+  color: #2683ff !important;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(68, 67, 67) !important;
+  text-transform: capitalize;
+}
+
+.text-red {
+  color: #fd3434 !important;
+}
+
+.bg-blue {
+  background-color: #2683ff !important;
+}
+
+.bg-blue:hover {
+  background-color: #eaeff7 !important;
+  border: #2683ff 1px solid !important;
+  color: #2683ff;
+  border-radius: 25px;
+}
+.bg-blue:focus {
+  background-color: #eaeff7 !important;
+  border: #2683ff 1px solid;
+  color: #2683ff;
+  border-radius: 25px;
+}
+
+.para {
+  color: #1f1f1f;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  text-transform: capitalize;
+}
+
+.text-data {
+  color: #1f1f1f;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+.heading {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.switch-container {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+.switch {
+  width: 200px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.switch {
+  color: #2683ff;
+}
+
+.switch p {
+  cursor: pointer;
+  width: 100px;
+  height: 100%;
+  border-radius: 20px;
+  transition: all 0.2s;
+  vertical-align: middle;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.switch p:hover {
+  background-color: #2683ff;
+  color: white;
+}
+
+.switch p.active {
+  background-color: #2683ff;
+  color: white !important;
+}
+
+.registration-popup {
+  width: 300px;
+  height: 100px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 10px;
+  padding: 10px;
+  animation-name: slideup;
+  animation-duration: 0.5s;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh !important;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  background-color: rgba(0, 0, 0, 0.521);
+}
+
+@keyframes slideup {
+  0% {
+    top: 40%;
+    opacity: 0.2;
+  }
+  100% {
+    top: 30%;
+    opacity: 1;
+  }
+}

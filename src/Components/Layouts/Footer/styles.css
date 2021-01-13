@@ -1,0 +1,17 @@
+.footer-bg {
+  background-image: url("../../../assets/img/footer-img/Footer-1a.jpg");
+  background-size: cover;
+  background-repeat: "no-repeat";
+  height: 50rem;
+  background-position: center;
+}
+
+@media(max-width:767px){
+  .footer-bg{
+    height: 100% !important;
+  }
+}
+
+.footer--widgets .widget + .widget {
+  margin-top: 37px;
+}

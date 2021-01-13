@@ -1,0 +1,7 @@
+.banner-1{
+  background-image: url('../../../assets/img/page-header-img/bg.jpg');
+  background-size: cover;
+  background-repeat: 'no-repeat';
+  height: 50rem;  
+  background-position: center;
+}

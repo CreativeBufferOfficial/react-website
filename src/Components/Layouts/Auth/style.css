@@ -1,0 +1,33 @@
+.bg-img {
+  /* background: linear-gradient(#37373779, #37373779),
+    url("../../../assets/img/footer-img/Footer-1.jpg"); */
+  background: rgb(14, 65, 143);
+  background: linear-gradient(
+    180deg,
+    rgba(14, 65, 143, 1) 0%,
+    rgba(3, 102, 178, 0.9948354341736695) 42%,
+    rgba(4, 100, 176, 1) 61%,
+    rgba(1, 111, 186, 1) 80%,
+    rgba(0, 112, 187, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0 40px 0;
+
+  overflow: overlay !important;
+  overflow-x: hidden !important;
+  /* padding-bottom: 60px; */
+  /* height: 100vh; */
+}
+
+@media only screen and (min-width: 1336px) {
+  .bg-img {
+    /* height: 120vh; */
+  }
+}
+
+.login-box,
+.register-box {
+  width: 360px;
+  margin: auto;
+}

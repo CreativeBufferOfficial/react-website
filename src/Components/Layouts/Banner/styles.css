@@ -1,0 +1,23 @@
+.banner-carousel1{
+  background-image: url('../../../assets/img/banner-home-img/hero-1.jpg');
+  background-size: cover;
+  background-repeat: 'no-repeat';
+  height: 50rem;  
+  background-position: center;
+}
+
+.banner-carousel2{
+  background-image: url('../../../assets/img/banner-home-img/hero-3.jpg');
+  background-size: cover;
+  background-repeat: 'no-repeat';
+  height: 50rem;  
+  background-position: center;
+}
+
+.banner-carousel3{
+  background-image: url('../../../assets/img/banner-home-img/hero-4.jpg');
+  background-size: cover;
+  background-repeat: 'no-repeat';
+  height: 50rem;  
+  background-position: center;
+}

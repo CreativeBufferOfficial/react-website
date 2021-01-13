@@ -1,0 +1,35 @@
+version: "3"
+services:
+  xport_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/srv/xport
+      - /srv/xport/node_modules
+    container_name: xport_dev
+    ports:
+      - 3000:3000
+  xport_staging:
+    build:
+      context: .
+      dockerfile: Dockerfile.staging
+    # volumes:
+      # - C:\Users\aaron\certs:/etc/nginx/certs # Windows path
+      # - /etc/nginx/certs:/etc/nginx/certs # Unix path
+    container_name: xport_staging
+    ports:
+      - 8000:80
+      - 443:443
+      - 5000:5000
+  xport:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # volumes:
+      # - C:\Users\aaron\certs:/etc/nginx/certs # Windows path
+      # - /etc/nginx/certs:/etc/nginx/certs # Unix path
+    container_name: xport
+    ports:
+      - 8000:80
+      - 443:443

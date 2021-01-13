@@ -1,0 +1,153 @@
+.active {
+  color: #2683ff !important;
+}
+
+.navbar-brand {
+  margin-top: -1.4em;
+}
+
+/* 5.2 HEADER NAVBAR */
+.header--navbar {
+  padding-top: 13px;
+  margin-bottom: 0;
+  color: #fff;
+  border-width: 0;
+  border-radius: 0;
+  -webkit-transition-property: padding, background-color, box-shadow;
+  transition-property: padding, background-color, box-shadow;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.is-sticky .header--navbar {
+  left: 0;
+  right: 0;
+  padding-bottom: 13px;
+  background-color: #222;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.header--navbar:before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 1140px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.is-sticky .header--navbar:before {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.header--navbar:after {
+  clear: none;
+}
+
+.header--navbar .navbar-toggle {
+  margin-right: 0;
+  padding: 9px 15px;
+  border-color: #fff;
+  border-radius: 24px;
+}
+
+.header--navbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.header--navbar .navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.header--cart-btn {
+  margin-left: 40px;
+}
+
+.header--cart-btn a {
+  padding: 9px 0;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+.header--cart-btn a:hover,
+.header--cart-btn a:focus {
+  color: #fff;
+}
+
+.header--cart-btn a .fa {
+  vertical-align: middle;
+}
+
+.header--cart-btn a span {
+  display: inline-block;
+  position: relative;
+  min-width: 30px;
+  margin-left: 10px;
+  background-color: #2683ff;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 0;
+}
+
+.header--cart-btn a span:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.header--cart-btn a:hover span:before {
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+}
+
+.header--navbar .navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header--nav-links {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header--nav-links > li > a {
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.header--nav-links > .dropdown > .dropdown-menu {
+  margin-top: 17px;
+}
+
+.header--nav-links > .dropdown > a:after {
+  content: "\f107";
+  margin-left: 5px;
+  font-family: "FontAwesome";
+}

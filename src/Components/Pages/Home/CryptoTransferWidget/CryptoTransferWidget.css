@@ -1,0 +1,265 @@
+.spinner-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.spinner-container .spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-items {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wizard-step .form-control {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  color: #565656;
+  padding: 8px 12px;
+  height: 40px;
+  box-shadow: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: inherit;
+}
+
+.wizard-step .selectToken {
+  border-radius: 4px;
+  color: #565656;
+  /* padding: 8px 12px; */
+  height: 40px;
+  box-shadow: none;
+
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.selectToken .css-26l3qy-menu {
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.multi-step .progtrckr {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+}
+.cryptotransferwidget .progtrckr li {
+  width: 33.3333% !important;
+}
+
+.footer-items {
+  margin-top: 60px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.footer-items .copyright-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  margin-right: auto;
+}
+
+.footer-items button {
+  border-radius: 7px;
+}
+
+.footer-items button:hover {
+  color: white;
+  background-color: initial;
+}
+
+.footer-items .btn-primary:not(:disabled):hover {
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.footer-items .btn-default:active,
+.footer-items .btn-default:focus {
+  background-color: white;
+  color: #2683ff;
+}
+
+.footer-items .btn-default:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.main-content {
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.multi-step .wizard-step {
+  padding: 0px 0px;
+}
+
+.transaction-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.transaction-details-col {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 20px;
+}
+
+.card-logo {
+  width: 10px;
+  height: 10px;
+}
+.transaction-details-col p {
+  /* height: 10px; */
+  /* height: 14px; */
+  margin-top: 0;
+  margin-bottom: 0;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.heading-transaction,
+.transaction-details-wallet {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: black;
+}
+
+.transaction-details-col p:nth-child(odd) {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.transaction-details-wallet {
+  text-align: left;
+  font-size: 14px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.transaction-details-wallet p {
+  margin-bottom: -3px;
+}
+
+.transaction-details-wallet .wallet-address {
+  white-space: nowrap;
+  /* height: 30px !important; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+  font-size: 12px;
+}
+
+.green-box {
+  border: 1px solid #31ac51;
+  background-color: #31ac51;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.red-box {
+  border: 1px solid rgb(255, 0, 0);
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.gray-box {
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.kyc-status{
+  padding-top: 5px;
+}
+
+
+.modal1 {
+  font-size: 12px;
+  display: block !important;
+  z-index: 111111 !important;
+}
+.modal1 > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal1 > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal1 > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal1 > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.modal1 > .btn{
+  background: #2683FF;
+  border: 1px solid #2683FF;
+  border-radius: 2px;
+  margin-right: 35px;
+  padding: 5px;
+}
+.popup-content {
+  width: 405px;
+   height:160px !important;
+   border-radius: 8px !important;
+   border: none !important;
+}
+.payment__Status{
+  font-weight: 600;
+  font-size: 1.1em;
+  color: black;
+}
+.transaction-details-col p:nth-child(even) {
+  font-weight: bold;
+}

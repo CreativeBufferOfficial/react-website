@@ -1,0 +1,28 @@
+.banner-bg1 {
+  background-image: url("../../../assets/img/banner-domain-img/slider-bg.jpg");
+  background-size: cover;
+  background-repeat: "no-repeat";
+  height: 50rem;
+  background-position: center;
+}
+
+/* .pricing--table {
+  width: 155%;
+  left: -27.5%;
+} */
+
+.pricing--table td {
+}
+
+.header--section {
+  background-color: rgba(0, 0, 0, 0) !important;
+  opacity: 1 !important;
+}
+
+.search-icon {
+  color: #ffffff;
+}
+
+.email-error {
+  border-color:red !important;
+}

@@ -1,0 +1,30 @@
+server {
+    listen       80 default_server;
+    listen       [::]:80 default_server;
+    server_name  _;
+    return 301 https://staging.xport-digital.com;
+}
+
+server {
+    access_log /var/log/nginx/access.log;
+    error_log  /var/log/nginx/error.log debug;
+
+    #listen 80; 
+    listen 443 ssl;
+        	
+    ssl_certificate     /root/certs/xport-digital.com/xport.pem;
+    ssl_certificate_key /root/certs/xport-digital.com/xport.key;
+
+    server_name staging.xport-digital.com;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}

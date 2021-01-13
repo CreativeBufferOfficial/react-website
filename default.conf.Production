@@ -1,0 +1,29 @@
+server {
+    listen       80 default_server;
+    listen       [::]:80 default_server;
+    server_name  _;
+    return 301 https://adaxtech.com;
+}
+
+server {
+    access_log /var/log/nginx/access.log;
+    error_log  /var/log/nginx/error.log debug;
+
+    listen 443 ssl;
+        	
+    ssl_certificate     /root/certs/adaxtech.com/adaxtechcom.pem;
+    ssl_certificate_key /root/certs/adaxtech.com/adaxtechcom.key;
+
+    server_name adaxtech.com;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+        try_files $uri $uri/ /index.html;
+    }
+
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
